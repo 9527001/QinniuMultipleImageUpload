@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "QinniuMultipleImageUpload"
   s.version      = "0.0.1"
-  s.summary      = “如名,七牛多图上传”
+  s.summary      = "如名,七牛多图上传"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -53,8 +53,8 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { “ZDong” => “1508574114@qq.com” }
-  # Or just: s.author    = "JTDDong"
+#  s.author             = { “ZDong” => “1508574114@qq.com” }
+ s.author    = "JTDDong"
   # s.authors            = { "JTDDong" => "zhaoyd@jvtd.cn" }
   # s.social_media_url   = "http://twitter.com/JTDDong"
 
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+   s.platform     = :ios
   # s.platform     = :ios, “8.0”
 
   #  When using multiple platforms
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+   s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -130,9 +130,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+   s.dependency "Qiniu", "~> 6.2.2"
 
 end

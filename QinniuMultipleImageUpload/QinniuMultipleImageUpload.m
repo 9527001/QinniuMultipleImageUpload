@@ -9,7 +9,11 @@
 #import "QinniuMultipleImageUpload.h"
 
 #import <UIKit/UIKit.h>
+#if __has_include(<AFNetworking/AFNetworking.h>)
 #import <QiniuSDK.h>
+#else
+#import "QiniuSDK.h"
+#endif
 
 @interface QinniuMultipleImageUpload ()
 
